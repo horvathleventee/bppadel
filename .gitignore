@@ -1,0 +1,12 @@
+# Generated local previews and deployment packages
+/*-preview.jpg
+/budapest-padel-review.tar.gz
+
+# Dependencies, builds and local configuration
+**/node_modules/
+**/.next/
+**/out/
+**/*.tsbuildinfo
+**/test-results/
+**/.env*
+!**/.env.example
