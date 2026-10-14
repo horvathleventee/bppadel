@@ -1,4 +1,5 @@
-import { Button, Eyebrow, Photo } from "./ui";
+import EmailInquiry from "./email-inquiry";
+import { Eyebrow, Photo } from "./ui";
 import { club } from "@/lib/config";
 export default function TeamBuilding() {
   const services = ["Pályafoglalás kisebb és nagyobb céges csoportok számára", "Ütőbérlés a résztvevőknek", "Igény esetén oktató vagy szervezett játékforma", "Öltözők és zuhanyzók", "Ingyenes parkolás", "Bár és közösségi tér", "Egyedi időpont- és programajánlat"];
@@ -16,7 +17,7 @@ export default function TeamBuilding() {
     </div></section>
     <section className="section team-offer" id="ajanlatkeres"><div className="container split">
       <div><Eyebrow dark>Rátok szabva</Eyebrow><h2>EGYEDI AJÁNLAT<br />CÉGEKNEK</h2><p>Minden céges eseményt egyedileg egyeztetünk a résztvevők száma, az időtartam és az igényelt szolgáltatások alapján.</p><p>Elsősorban e-mailben állunk rendelkezésre, de telefonon is szívesen segítünk a részletek egyeztetésében.</p><p>A szolgáltatásról természetesen céges, ÁFÁ-s számlát biztosítunk.</p></div>
-      <div className="team-contact"><h3>Kérj egyedi ajánlatot csapatotok számára!</h3><p>Írd meg a tervezett létszámot, időpontot és az elképzeléseiteket.</p><Button href={`mailto:${club.email}?subject=${encodeURIComponent("Céges csapatépítő – ajánlatkérés")}`}>Ajánlatot kérek e-mailben</Button><a href={`mailto:${club.email}`}>{club.email}</a><a href={club.telephone}>{club.phone}</a></div>
+      <div className="team-contact"><h3>Kérj egyedi ajánlatot csapatotok számára!</h3><p>Írd meg a tervezett létszámot, időpontot és az elképzeléseiteket.</p><EmailInquiry /><a href={`mailto:${club.email}`}>{club.email}</a><a href={club.telephone}>{club.phone}</a></div>
     </div></section>
   </>;
 }
