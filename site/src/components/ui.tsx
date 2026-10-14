@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
-import { BOOKING_URL } from "@/lib/config";
+import BookingButton from "./booking-button";
 export function Button({
-  href = BOOKING_URL,
+  href,
   children = "Pályafoglalás",
   secondary = false,
   className = "",
@@ -13,6 +13,7 @@ export function Button({
   secondary?: boolean;
   className?: string;
 }) {
+  if (!href) return <BookingButton className={`button ${secondary ? "button-secondary" : ""} ${className}`}>{children}</BookingButton>;
   return (
     <Link
       href={href}

@@ -10,7 +10,7 @@ for (const file of await readdir("content")) {
       .webp({ quality: 83 })
       .toFile(`public/images/${file.replace(/\.[^.]+$/, "")}-${width}.webp`);
 }
-for (const slug of ["impresszum", "hazirend", "adatkezelesi-tajekoztato"]) {
+for (const slug of ["impresszum", "adatkezelesi-tajekoztato"]) {
   const $ = load(await readFile(`docs/original-${slug}.html`, "utf8"));
   const root = $("main").length
     ? $("main")

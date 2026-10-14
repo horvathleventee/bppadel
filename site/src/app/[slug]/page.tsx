@@ -7,7 +7,8 @@ import {
   Ghost,
   Facilities,
   Beginner,
-  Fame,
+  Pricing,
+  Gallery,
   Community,
   Booking,
   Contact,
@@ -40,13 +41,8 @@ const pages: Record<
       "Fedezd fel a padel fluoreszkáló oldalát. Különleges alkalmak, különleges hangulat.",
     label: "Ghost Padel",
   },
-  dicsosegfal: {
-    title: "Dicsőségfal",
-    headline: "ITT MARADNAK AZ EMLÉKEK.",
-    description:
-      "A Budapest Padel dicsőségfala. A közzétett eredmények és emlékezetes teljesítmények helye.",
-    label: "A közösség pillanatai",
-  },
+  araink: { title: "Áraink", headline: "JÁTÉKRA KÉSZEN.", description: "Pályabérlés: 16.000 Ft / pálya / óra. Ütőbérlés: 1.500 Ft / ütő / alkalom.", label: "Budapest Padel árak" },
+  galeria: { title: "Galéria", headline: "ITT JÁTSZUNK.", description: "Nézz körül a Budapest Padel pályáin és közösségi tereiben.", label: "A központ képekben" },
   kapcsolat: {
     title: "Kapcsolat és megközelítés",
     headline: "TALÁLKOZUNK A PÁLYÁN.",
@@ -153,9 +149,7 @@ function Guide() {
           <details>
             <summary>Hogyan foglalhatok?</summary>
             <p>
-              A Pályafoglalás gomb a Budapest Padel Playtomic-oldalára vezet. Az
-              aktuális időpontokat és árakat ott találod. Telefonon is
-              érdeklődhetsz.
+              A Pályafoglalás gombra kattintva választhatsz: telefonon, a Playtomic felületén vagy e-mailben szeretnél foglalni.
             </p>
           </details>
           <details>
@@ -224,12 +218,8 @@ export default async function Page({
           <Contact />
         </>
       )}
-      {slug === "dicsosegfal" && (
-        <>
-          <Fame full />
-          <Community />
-        </>
-      )}
+      {slug === "araink" && <Pricing />}
+      {slug === "galeria" && <Gallery />}
       {slug === "kapcsolat" && <Contact />}
       {slug === "mi-az-a-padel" && (
         <>

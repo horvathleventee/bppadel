@@ -1,162 +1,290 @@
 [
   {
     "type": "heading",
-    "text": "Budapest Padel Szabályzat"
+    "text": "BUDAPEST PADEL HÁZIREND"
   },
   {
     "type": "heading",
-    "text": "1. Általános Szabályok"
+    "text": "1. Általános szabályok"
   },
   {
     "type": "text",
-    "text": "1.1. A Padel centrum nyitvatartási ideje: hétfőtől vasárnapig, 8:00-tól 23:00-ig."
+    "text": "1.1. A Padel centrum nyitvatartási ideje hétfőtől vasárnapig, 8:00-tól 23:00-ig."
   },
   {
     "type": "text",
-    "text": "1.2. A centrum területén minden látogatónak tiszteletben kell tartania a  közösségi normákat és a sport etikettjét."
+    "text": "1.2. A centrum területén minden látogató köteles tiszteletben tartani a közösségi normákat, a sport etikettjét, valamint más vendégek nyugalmát és biztonságát."
   },
   {
     "type": "text",
-    "text": "1.3. Az elsősegélydoboz a recepción található, szükség esetén kérjük, forduljon a személyzethez."
+    "text": "1.3. Az elsősegélydoboz a recepción található. Sérülés vagy rosszullét esetén kérjük, haladéktalanul forduljanak a személyzethez."
+  },
+  {
+    "type": "text",
+    "text": "1.4. A látogatók kötelesek betartani a centrum személyzetének biztonsággal, renddel és üzemeltetéssel kapcsolatos utasításait."
   },
   {
     "type": "heading",
-    "text": "2. Pályabérlés"
+    "text": "2. Pályabérlés és foglalás"
   },
   {
     "type": "text",
-    "text": "2.1. A pályákat előzetes foglalás alapján lehet igénybe venni."
+    "text": "2.1. A pályák előzetes foglalás alapján vehetők igénybe."
   },
   {
     "type": "text",
-    "text": "2.2. Foglalást személyesen, telefonon vagy online lehet intézni."
+    "text": "2.2. Foglalás személyesen, telefonon vagy online történhet."
   },
   {
     "type": "text",
-    "text": "2.3. A foglalás lemondása legkésőbb 24 órával a játék kezdete előtt lehetséges, ellenkező esetben a bérleti díjat ki kell fizetni."
+    "text": "2.3. A foglalás díjmentes lemondása legkésőbb 24 órával a játék kezdete előtt lehetséges. 24 órán belüli lemondás esetén a pályabérleti díjat ki kell fizetni."
+  },
+  {
+    "type": "text",
+    "text": "2.4. A foglalási idő a lefoglalt időpontban kezdődik. Késés esetén a játékidő nem hosszabbodik meg automatikusan."
+  },
+  {
+    "type": "text",
+    "text": "2.5. A pályát a foglalási idő lejártakor el kell hagyni és át kell adni a következő játékosok részére."
+  },
+  {
+    "type": "text",
+    "text": "2.6. A lefoglalt időn túli pályahasználat kizárólag a centrum személyzetének engedélyével lehetséges."
+  },
+  {
+    "type": "text",
+    "text": "2.7. Jogosulatlan túljátszás esetén a centrum jogosult a többlethasználat díját felszámítani."
   },
   {
     "type": "heading",
-    "text": "3. Felszerelés és Öltözet"
+    "text": "3. Felszerelés és öltözet"
   },
   {
     "type": "text",
-    "text": "3.1. A játékosoknak megfelelő sportöltözetet és sportcipőt kell viselniük."
+    "text": "3.1. A játékosoknak megfelelő sportöltözetet és sportolásra alkalmas sportcipőt kell viselniük."
   },
   {
     "type": "text",
-    "text": "3.2. Saját ütőt és labdát hozhatnak a játékosok, de ezek bérlésére is van lehetőség a recepción."
+    "text": "3.2. A pályákra kizárólag tiszta lábbeliben lehet belépni. Sáros, erősen szennyezett vagy a pályaborítást károsító cipő használata tilos."
   },
   {
     "type": "text",
-    "text": "3.3. A centrumban használt felszerelést a játék végén vissza kell adni."
+    "text": "3.3. A játékosok saját ütőt és labdát használhatnak, valamint a recepción lehetőség van felszerelés bérlésére is."
   },
   {
     "type": "text",
-    "text": "3.4. Játék közben tilos gyűrűt, órát és karkötőt viselni a sérülésveszély elkerülése érdekében."
+    "text": "3.4. A centrum tulajdonát képező bérelt felszereléseket a játék befejezését követően vissza kell adni."
+  },
+  {
+    "type": "text",
+    "text": "3.5. A bérelt eszközök elvesztése vagy megrongálása esetén a használó köteles az ebből eredő kárt megtéríteni."
+  },
+  {
+    "type": "text",
+    "text": "3.6. Játék közben a sérülésveszély csökkentése érdekében gyűrű, óra, karkötő vagy egyéb sérülést okozható kiegészítő viselése nem ajánlott."
   },
   {
     "type": "heading",
-    "text": "4. Biztonsági Szabályok"
+    "text": "4. Biztonsági szabályok"
   },
   {
     "type": "text",
-    "text": "4.1. Bármilyen sérülés esetén azonnal értesíteni kell a centrum személyzetét."
+    "text": "4.1. Bármilyen sérülés, baleset vagy rosszullét esetén azonnal értesíteni kell a centrum személyzetét."
   },
   {
     "type": "text",
-    "text": "4.2. A pályákra csak a játékosok és a centrum alkalmazottai léphetnek be."
+    "text": "4.2. A pályákra kizárólag az adott időpontban játszó játékosok, az edzők, valamint a centrum alkalmazottai léphetnek be."
+  },
+  {
+    "type": "text",
+    "text": "4.3. Ittas, bódult vagy sportolásra láthatóan alkalmatlan állapotban a pályák használata tilos."
+  },
+  {
+    "type": "text",
+    "text": "4.4. A személyzet jogosult megtagadni a pályahasználatot attól a személytől, aki saját vagy mások biztonságát veszélyezteti."
+  },
+  {
+    "type": "text",
+    "text": "4.5. A sportlétesítményeket mindenki saját felelősségére használja, és köteles saját egészségi állapotát, fizikai felkészültségét és terhelhetőségét figyelembe venni."
+  },
+  {
+    "type": "text",
+    "text": "4.6. Kiskorú személyek felügyeletéért a szülő, törvényes képviselő vagy kísérő felelős."
   },
   {
     "type": "heading",
-    "text": "5. Viselkedési Szabályok"
+    "text": "5. Étel, ital és állatok"
   },
   {
     "type": "text",
-    "text": "5.1. Tilos a hangoskodás, durva beszéd és sportszerűtlen magatartás."
+    "text": "5.1. A pályákra ételt és italt bevinni tilos."
   },
   {
     "type": "text",
-    "text": "5.2. A centrum területén tilos a dohányzás és az alkohol fogyasztása."
+    "text": "5.2. Ételt és italt kizárólag a centrum erre kijelölt területein szabad fogyasztani."
   },
   {
     "type": "text",
-    "text": "5.3. Az eszközök és berendezések rongálása esetén a károkozónak felelősséget kell vállalnia a javítási költségekért."
-  },
-  {
-    "type": "text",
-    "text": "5.4. Mindenki köteles ügyelni a tisztaságra a játék- és nézőtéren, illetve az öltözőkben egyaránt."
+    "text": "5.3. A centrum területére kutyát vagy egyéb állatot behozni tilos, a jogszabály alapján engedélyezett segítő kutyák kivételével."
   },
   {
     "type": "heading",
-    "text": "6. Fizetési Szabályok"
+    "text": "6. Viselkedési szabályok"
   },
   {
     "type": "text",
-    "text": "6.1. A pályabérlés és egyéb szolgáltatások díját előre kell kiegyenlíteni."
+    "text": "6.1. Tilos a másokat zavaró hangoskodás, agresszív viselkedés, durva beszéd és sportszerűtlen magatartás."
   },
   {
     "type": "text",
-    "text": "6.2. Elfogadott fizetési módok: készpénz, bankkártya, online fizetés."
+    "text": "6.2. A centrum területén tilos a dohányzás, kivéve az erre kijelölt területet, amennyiben ilyen rendelkezésre áll."
   },
   {
     "type": "text",
-    "text": "6.3. A tagsági díjak havi vagy éves rendszerességgel fizetendők."
+    "text": "6.3. Minden látogató köteles ügyelni a tisztaságra a játékterületen, a nézőtéren, a közösségi helyiségekben és az öltözőkben egyaránt."
+  },
+  {
+    "type": "text",
+    "text": "6.4. A centrum eszközeinek, felszereléseinek, bútorainak, pályáinak vagy egyéb berendezéseinek szándékos vagy gondatlan rongálása tilos."
+  },
+  {
+    "type": "text",
+    "text": "6.5. Aki a centrum tulajdonában kárt okoz, köteles az általa okozott kárt megtéríteni."
+  },
+  {
+    "type": "text",
+    "text": "6.6. Súlyos vagy ismételt szabályszegés, agresszív vagy sportszerűtlen magatartás, rongálás, illetve más személyek veszélyeztetése esetén a centrum jogosult az érintett személyt a létesítmény elhagyására felszólítani."
+  },
+  {
+    "type": "text",
+    "text": "6.7. Indokolt esetben a centrum jogosult a szabályszegő személlyel szemben a későbbi szolgáltatásnyújtást is megtagadni."
   },
   {
     "type": "heading",
-    "text": "7. Tagság és Kedvezmények"
+    "text": "7. Fizetési szabályok"
   },
   {
     "type": "text",
-    "text": "7.1. A centrum különböző tagsági szinteket kínál, amelyek részleteit a recepción lehet megtekinteni."
+    "text": "7.1. A pályabérlés és egyéb igénybe vett szolgáltatások díját legkésőbb a szolgáltatás igénybevételekor ki kell egyenlíteni."
   },
   {
     "type": "text",
-    "text": "7.2. Tagsági előnyök közé tartozik a kedvezményes pályabérlés, exkluzív rendezvényeken való részvétel és egyéb kedvezmények."
+    "text": "7.2. Elfogadott fizetési módok: készpénz, bankkártya és online fizetés."
+  },
+  {
+    "type": "text",
+    "text": "7.3. A bérletekre, tagságokra, kedvezményekre és egyéb konstrukciókra az azokhoz tartozó aktuális feltételek vonatkoznak."
   },
   {
     "type": "heading",
-    "text": "8. Adatvédelem"
+    "text": "8. Tagságok és kedvezmények"
   },
   {
     "type": "text",
-    "text": "8.1. A centrum tiszteletben tartja a látogatók személyes adatainak védelmét."
+    "text": "8.1. A centrum különböző tagsági, bérlet- és kedvezményes konstrukciókat kínálhat."
   },
   {
     "type": "text",
-    "text": "8.2. Az adatokat kizárólag a centrum szolgáltatásainak biztosításához és fejlesztéséhez használjuk fel."
-  },
-  {
-    "type": "text",
-    "text": "8.3. Az adatkezelési szabályzat részletesen a recepción és a centrum weboldalán elérhető."
+    "text": "8.2. Az aktuálisan elérhető konstrukciók, azok díjai, érvényessége és felhasználási feltételei a recepción, illetve a centrum online felületein érhetők el."
   },
   {
     "type": "heading",
-    "text": "9. Panaszkezelés"
+    "text": "9. Személyes tárgyak és talált tárgyak"
   },
   {
     "type": "text",
-    "text": "9.1. Bármilyen panaszt vagy észrevételt a recepción, e-mailben vagy a weboldalon keresztül lehet benyújtani."
+    "text": "9.1. A centrum az őrizetlenül hagyott ruházatért, személyes tárgyakért és értéktárgyakért a jogszabályok által megengedett mértékben nem vállal felelősséget."
   },
   {
     "type": "text",
-    "text": "9.2. A centrum minden panaszt igyekszik a lehető leghamarabb kivizsgálni és orvosolni."
+    "text": "9.2. A talált tárgyakat a recepción kell leadni."
+  },
+  {
+    "type": "text",
+    "text": "9.3. A centrum a talált tárgyakat azok megtalálásától számított 3 hónapig őrzi."
   },
   {
     "type": "heading",
-    "text": "10. Egyéb rendelkezések"
+    "text": "10. Fotózás és videófelvétel"
   },
   {
     "type": "text",
-    "text": "10.1. A centrum fenntartja a jogot, hogy bármikor módosítsa a szabályzatot."
+    "text": "10.1. Magáncélú fotó- és videófelvétel készítése során minden látogató köteles tiszteletben tartani más személyek személyiségi és képmáshoz fűződő jogait."
   },
   {
     "type": "text",
-    "text": "10.2. A módosításokról a látogatókat időben értesítjük a recepción és a weboldalon keresztül."
+    "text": "10.2. Üzleti, reklám-, kereskedelmi vagy professzionális célú fotózás és videófelvétel készítése kizárólag a centrum előzetes engedélyével lehetséges."
+  },
+  {
+    "type": "heading",
+    "text": "11. Rendezvények"
   },
   {
     "type": "text",
-    "text": "10.3. A látogatók kötelesek betartani a házirendet, amely minden látogató számára elérhető a recepción és a weboldalon."
+    "text": "11.1. Versenyek, rendezvények, céges események vagy egyéb különleges programok esetén a centrum jogosult egyes területek használatát ideiglenesen korlátozni."
+  },
+  {
+    "type": "text",
+    "text": "11.2. A centrum az adott rendezvényre külön részvételi, biztonsági vagy használati szabályokat határozhat meg."
+  },
+  {
+    "type": "heading",
+    "text": "12. Adatvédelem"
+  },
+  {
+    "type": "text",
+    "text": "12.1. A centrum tiszteletben tartja a látogatók személyes adatainak védelmét."
+  },
+  {
+    "type": "text",
+    "text": "12.2. A személyes adatok kezelése kizárólag a vonatkozó jogszabályoknak és a centrum mindenkori adatkezelési tájékoztatójának megfelelően történik."
+  },
+  {
+    "type": "text",
+    "text": "12.3. A részletes adatkezelési tájékoztató a recepción és a centrum weboldalán érhető el."
+  },
+  {
+    "type": "heading",
+    "text": "13. Panaszkezelés"
+  },
+  {
+    "type": "text",
+    "text": "13.1. Panasz vagy észrevétel személyesen a recepción, e-mailben vagy a centrum weboldalán megadott elérhetőségen keresztül nyújtható be."
+  },
+  {
+    "type": "text",
+    "text": "13.2. A centrum a panaszokat a vonatkozó jogszabályoknak megfelelően kivizsgálja és kezeli."
+  },
+  {
+    "type": "heading",
+    "text": "14. Vis maior és rendkívüli események"
+  },
+  {
+    "type": "text",
+    "text": "14.1. Vis maior, műszaki meghibásodás vagy egyéb, a centrum működését akadályozó, rendkívüli esemény esetén előfordulhat, hogy egy foglalás nem teljesíthető az eredeti időpontban."
+  },
+  {
+    "type": "text",
+    "text": "14.2. Ilyen esetben a centrum törekszik arra, hogy a lehető leghamarabb, mindkét fél számára megfelelő pótidőpontot biztosítson."
+  },
+  {
+    "type": "heading",
+    "text": "15. Egyéb rendelkezések"
+  },
+  {
+    "type": "text",
+    "text": "15.1. A centrum fenntartja a jogot a házirend módosítására."
+  },
+  {
+    "type": "text",
+    "text": "15.2. A módosításokról a látogatók a recepción, a weboldalon vagy a centrum egyéb kommunikációs felületein tájékozódhatnak."
+  },
+  {
+    "type": "text",
+    "text": "15.3. A centrum területére történő belépéssel, illetve a szolgáltatások igénybevételével a látogató elfogadja a jelen házirendben foglaltakat."
+  },
+  {
+    "type": "text",
+    "text": "15.4. A házirend minden látogató számára elérhető a recepción és a centrum weboldalán."
   }
 ]

@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Menu, X, ArrowUpRight } from "lucide-react";
-import { navigation, BOOKING_URL } from "@/lib/config";
+import { Menu, X } from "lucide-react";
+import { navigation } from "@/lib/config";
+import BookingButton from "./booking-button";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
@@ -50,9 +51,7 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <a href={BOOKING_URL} className="header-book">
-          Pályafoglalás <ArrowUpRight size={18} aria-hidden="true" />
-        </a>
+        <BookingButton className="header-book" />
         <button
           ref={trigger}
           className="menu-toggle"
@@ -91,9 +90,7 @@ export default function Header() {
               </Link>
             ))}
           </nav>
-          <a className="button" href={BOOKING_URL}>
-            Pályafoglalás <ArrowUpRight size={20} />
-          </a>
+          <BookingButton onOpen={close} />
           <p>
             Budapest · XVI. kerület
             <br />

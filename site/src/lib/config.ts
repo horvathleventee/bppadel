@@ -17,7 +17,8 @@ export const navigation = [
   { href: "/rolunk/", label: "A központról" },
   { href: "/palyak/", label: "Pályák" },
   { href: "/ghost-padel/", label: "Ghost Padel" },
-  { href: "/dicsosegfal/", label: "Dicsőségfal" },
+  { href: "/araink/", label: "Áraink" },
+  { href: "/galeria/", label: "Galéria" },
   { href: "/kapcsolat/", label: "Kapcsolat" },
 ];
 export const legalNavigation = [
@@ -49,8 +50,8 @@ export const facilities = [
     icon: "lock",
   },
   {
-    title: "Parkolás",
-    description: "Autóval érkezel? A központnál parkolási lehetőség vár.",
+    title: "Ingyenes parkolás",
+    description: "Autóval érkezel? A központnál ingyenes parkolási lehetőség vár.",
     icon: "car",
   },
   {

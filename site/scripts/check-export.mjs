@@ -7,7 +7,8 @@ const routes = [
   "rolunk",
   "palyak",
   "ghost-padel",
-  "dicsosegfal",
+  "araink",
+  "galeria",
   "kapcsolat",
   "mi-az-a-padel",
   "impresszum",
@@ -53,7 +54,7 @@ for (const route of routes) {
   }
   assert.equal($('script[src*="googletagmanager"],iframe').length, 0);
 }
-for (const slug of ["impresszum", "hazirend", "adatkezelesi-tajekoztato"]) {
+for (const slug of ["impresszum", "adatkezelesi-tajekoztato"]) {
   const $ = load(await readFile(`docs/original-${slug}.html`, "utf8"));
   const texts = [];
   $("main .elementor-widget-heading, main .elementor-widget-text-editor").each(
@@ -77,3 +78,16 @@ assert.equal(
 console.log(
   `PASS: ${routes.length} routes; ${checked} internal links; image sources; Hungarian metadata; unchanged legal text; identical original logo; no trackers/embeds.`,
 );
+
+const rules = (await readFile("docs/hazirend-client.txt", "utf8")).split(/\r?\n/).map(s=>s.trim()).filter(s=>s && s !== "⸻").join("");
+const ruleBlocks = JSON.parse(await readFile("content/hazirend.json", "utf8"));
+assert.equal(normalize(ruleBlocks.map(b=>b.text).join("")),normalize(rules));
+const rulesPage = load(await readFile("out/hazirend/index.html", "utf8"));
+assert.equal(normalize(rulesPage("article.legal").text()),normalize(rules));
+const home = load(await readFile("out/index.html", "utf8"));
+assert.ok(!home("main").text().includes("Digitális pontkövetés"));
+assert.ok(home("main").text().includes("Ingyenes parkolás"));
+const prices = load(await readFile("out/araink/index.html", "utf8"));
+assert.ok(prices("main").text().includes("16.000"));
+assert.ok(prices("main").text().includes("1.500"));
+console.log("PASS: client-supplied house rules rendered exactly; prices and updated facilities.");

@@ -71,3 +71,9 @@ Set `NEXT_PUBLIC_SITE_URL` at build time to the destination origin. For private/
 See `docs/QA.md` and `docs/AUDIT.md`. Build, TypeScript, lint, route/link/asset/legal/logo checks are included. Core Web Vitals are field metrics and cannot be certified from a local preview. No claimed Lighthouse score or WCAG certification.
 
 
+
+## Client updates — 2026-10-14
+
+Booking buttons now open a choice of phone, Playtomic or email. Pricing replaces the former fame section (16.000 Ft / court / hour; 1.500 Ft / racket / visit). Parking is free; digital scoring is no longer advertised. The gallery uses six existing venue photos; additional B-court photos are pending from the client.
+
+The current house rules are supplied by the client and preserved verbatim in `docs/hazirend-client.txt` and `content/hazirend.json`. Asset regeneration intentionally leaves these rules untouched. Earlier audit notes about the original house rules and digital scoring are superseded by this update.

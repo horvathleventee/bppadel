@@ -6,7 +6,7 @@ import {
   Ghost,
   Facilities,
   Beginner,
-  Fame,
+  Pricing,
   Community,
   Booking,
   Contact,
@@ -23,7 +23,7 @@ export default function Home() {
       <Ghost />
       <Facilities />
       <Beginner />
-      <Fame />
+      <Pricing />
       <Community />
       <Booking />
       <Contact />

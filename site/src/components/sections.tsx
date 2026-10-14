@@ -188,9 +188,9 @@ export function Courts({ full = false }: { full?: boolean }) {
             <p>A központ felszereltségének része.</p>
           </div>
           <div>
-            <span>02 / TECHNOLÓGIA</span>
-            <h3>Digitális pontkövetés</h3>
-            <p>Bluetooth-karkötős vezérléssel.</p>
+            <span>02 / KÉNYELEM</span>
+            <h3>Ingyenes parkolás</h3>
+            <p>Érkezz kényelmesen, közvetlenül a központhoz.</p>
           </div>
           <div>
             <span>03 / ÉLMÉNY</span>
@@ -299,36 +299,21 @@ export function Beginner() {
     </section>
   );
 }
-export function Fame({ full = false }: { full?: boolean }) {
-  return (
-    <section className="section fame">
-      <div className="container fame-grid">
-        <div>
-          <Eyebrow dark>Dicsőségfal</Eyebrow>
-          <h2>
-            A PÁLYÁN MINDENKI
-            <br />
-            <span className="title-accent">bizonyíthat.</span>
-          </h2>
-          <p>A közös meccsekből emlékezetes pillanatok születnek.</p>
-          {!full && (
-            <TextLink href="/dicsosegfal/">Irány a dicsőségfal</TextLink>
-          )}
-        </div>
-        <div className="fame-empty">
-          <span className="fame-laurel" aria-hidden="true">
-            ↗
-          </span>
-          <span>A KÖVETKEZŐ FEJEZET</span>
-          <h3>
-            Ki lesz az első
-            <br />a dicsőségfalon?
-          </h3>
-          <p>A közzétett eredmények itt kapnak majd helyet.</p>
-        </div>
-      </div>
-    </section>
-  );
+export function Pricing() {
+  return <section className="section pricing"><div className="container">
+    <SectionHeading label="Áraink" title="A KÖVETKEZŐ MECCSED." description="Foglalj pályát a csapatnak. Ha nincs saját ütőd, nálunk bérelhetsz." />
+    <div className="price-grid">
+      <article className="price-card"><span>01 / PÁLYABÉRLÉS</span><h3>16.000 <small>Ft</small></h3><p>pálya / óra</p><p className="price-detail">A teljes pálya bérleti díja egy órára.</p><Button>Foglalj pályát</Button></article>
+      <article className="price-card"><span>02 / ÜTŐBÉRLÉS</span><h3>1.500 <small>Ft</small></h3><p>ütő / alkalom</p><p className="price-detail">Felszerelés a játékhoz, a recepción.</p><TextLink href="/kapcsolat/">Elérhetőségeink</TextLink></article>
+    </div>
+  </div></section>;
+}
+export function Gallery() {
+  const captions = ["Ütők a következő meccshez", "A Budapest Padel központ", "Közösségi tér a pályák mellett", "Játék a kék pályán", "Pihenő a meccs után", "Szuperpanorámás pályák"];
+  return <section className="section"><div className="container">
+    <SectionHeading label="Galéria" title="NÉZZ KÖRÜL NÁLUNK." description="Pályák, közös terek és a játék hangulata. Ez a Budapest Padel." />
+    <div className="venue-gallery">{captions.map((caption,i)=><figure key={caption}><a href={`/images/venue-${i+1}-1920.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${caption} – nagy kép megnyitása`}><Photo id={`venue-${i+1}`} alt={caption} /></a><figcaption>0{i+1} / {caption}</figcaption></figure>)}</div>
+  </div></section>;
 }
 export function Community() {
   return (
@@ -395,7 +380,7 @@ export function Booking() {
             <a className="booking-phone" href={club.telephone}>
               Vagy hívj minket: {club.phone}
             </a>
-            <p>Online pályafoglalás a Playtomic felületén.</p>
+            <p>Foglalás telefonon, Playtomicon vagy e-mailben.</p>
           </div>
         </div>
       </div>
