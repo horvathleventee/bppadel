@@ -81,3 +81,5 @@ The current house rules are supplied by the client and preserved verbatim in `do
 ## Vercel and SEO migration
 
 Set the Vercel project Root Directory to `site`. Production environment: `NEXT_PUBLIC_SITE_URL=https://budapestpadel.hu`, `NEXT_PUBLIC_NOINDEX=false`. The tracked `vercel.json` supplies explicit legacy 301 redirects. Preview builds remain noindex automatically. See [SEO audit and migration checklist](docs/SEO-MIGRATION.md) for the verified legacy URL inventory, deployment settings, limitations and post-launch HTTP checks. Run `npm run test:seo` against a production build; `npm run test:seo:live -- https://budapestpadel.hu` only after Vercel is serving that domain.
+
+Vercel uses the **Other** preset (`framework: null`) to serve the static Next.js export from `out/`. Do not combine the Next.js Vercel adapter with an `out` output override: that adapter expects Next.js build manifests, not exported HTML. The repository configuration overrides the dashboard preset.

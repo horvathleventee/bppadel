@@ -39,7 +39,7 @@ A `site/vercel.json` explicit `statusCode: 301` szabályokat tartalmaz. A Vercel
 
 ## Vercel beállítások az élesítéshez
 
-1. GitHub: `horvathleventee/bppadel`, Root Directory: **site**. Framework: Next.js. Build: `npm run build`, Output Directory: `out`. Node: 22.13+ vagy 24 LTS.
+1. GitHub: `horvathleventee/bppadel`, Root Directory: **site**. Framework Preset: **Other** (`framework: null`). A Next.js továbbra is elkészíti a statikus exportot; a Vercel statikus oldalként szolgálja ki az `out` mappát. Build: `npm run build`, Output Directory: `out`. Node: 22.13+ vagy 24 LTS.
 2. Production környezet: `NEXT_PUBLIC_SITE_URL=https://budapestpadel.hu`, `NEXT_PUBLIC_NOINDEX=false`. Preview környezetben noindex maradjon; a VERCEL_ENV automatikus védelmet ad. A Sites előnézethez használt változókat ne másold át productionbe.
 3. Add hozzá a `budapestpadel.hu` és `www.budapestpadel.hu` domaineket; a Vercel által megadott DNS rekordokat használd. A levelezés MX/TXT rekordjait őrizd meg. A www hosztot ugyanahhoz a projekthez rendeld, a repo 301 szabályát használd; külön dashboard-átirányítás felülírhatja ezt.
 4. WordPress mentés, médiaexport és DNS visszaállítási lehetőség legyen meg a váltás előtt. A teljes régi `/wp-content/uploads/` megtartása megőrzi a még fel nem mért médiák URL-jeit is.

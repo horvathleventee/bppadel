@@ -29,6 +29,9 @@ const robots=await readFile('out/robots.txt','utf8');
 assert.equal(/^Disallow: \/$/m.test(robots),noindex);
 assert.ok(robots.includes(`Sitemap: ${origin}/sitemap.xml`));
 const config=JSON.parse(await readFile('vercel.json','utf8'));
+assert.equal(config.framework, null, 'Static export must use the Vercel Other preset');
+assert.equal(config.outputDirectory, 'out');
+assert.ok((await stat('out/index.html')).isFile());
 for(const rule of config.redirects){
   assert.equal(rule.statusCode,301);
   assert.ok(!('permanent' in rule));
