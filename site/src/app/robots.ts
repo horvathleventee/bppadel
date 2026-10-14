@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/config";
+import { SITE_URL, IS_NOINDEX } from "@/lib/config";
 export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      ...(process.env.NEXT_PUBLIC_NOINDEX === "true"
+      ...(IS_NOINDEX
         ? { disallow: "/" }
         : { allow: "/" }),
     },

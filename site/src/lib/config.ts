@@ -13,12 +13,15 @@ export const club = {
 export const BOOKING_URL = "https://playtomic.com/clubs/budapest-padel";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL || "https://budapestpadel.hu";
+export const IS_NOINDEX = process.env.NEXT_PUBLIC_NOINDEX === "true" || Boolean(process.env.VERCEL_ENV && process.env.VERCEL_ENV !== "production");
+export const socialImage = { url: "/images/social-cover.jpg", width: 1200, height: 630, alt: "A Budapest Padel fedett pályái" };
 export const navigation = [
   { href: "/rolunk/", label: "A központról" },
   { href: "/palyak/", label: "Pályák" },
   { href: "/ghost-padel/", label: "Ghost Padel" },
   { href: "/araink/", label: "Áraink" },
   { href: "/galeria/", label: "Galéria" },
+  { href: "/ceges-csapatepito/", label: "Céges csapatépítő" },
   { href: "/kapcsolat/", label: "Kapcsolat" },
 ];
 export const legalNavigation = [

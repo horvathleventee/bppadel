@@ -1,3 +1,5 @@
+import TeamBuilding from "@/components/team-building";
+import { SITE_URL, socialImage } from "@/lib/config";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -20,6 +22,7 @@ const pages: Record<
   string,
   { title: string; headline: string; description: string; label: string }
 > = {
+  "ceges-csapatepito": { title: "Céges csapatépítő Budapesten", headline: "CÉGES CSAPATÉPÍTŐ A BUDAPEST PADELNÉL", description: "Céges csapatépítő 8 fedett, klimatizált padelpályán Budapest XVI. kerületében. Kezdőknek is, egyedi programmal, ingyenes parkolással és ÁFÁ-s számlával.", label: "Egy csapat. Új élmények." },
   rolunk: {
     title: "A központról",
     headline: "EGY HELY. KÖZÖS SZENVEDÉLY.",
@@ -96,6 +99,10 @@ export async function generateMetadata({
       title: `${page.title} | Budapest Padel`,
       description: page.description,
       url: `/${slug}/`,
+      type: "website",
+      locale: "hu_HU",
+      siteName: "Budapest Padel",
+      images: [socialImage],
     },
   };
 }
@@ -185,7 +192,8 @@ export default async function Page({
     );
   return (
     <>
-      <section className="page-hero">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Kezdőlap", item: `${SITE_URL}/` }, { "@type": "ListItem", position: 2, name: data.title, item: `${SITE_URL}/${slug}/` }] }).replace(/</g, "\u003c") }} />
+      <section className={`page-hero ${slug === "ceges-csapatepito" ? "team-hero" : ""}`}>
         <div className="container">
           <nav className="breadcrumbs" aria-label="Morzsamenü">
             <Link href="/">Kezdőlap</Link>
@@ -198,6 +206,7 @@ export default async function Page({
           {slug === "palyak" && <Button />}
         </div>
       </section>
+      {slug === "ceges-csapatepito" && <TeamBuilding />}
       {slug === "rolunk" && (
         <>
           <About full />
@@ -237,9 +246,9 @@ export default async function Page({
             ),
           )}
         </article>
-      ) : (
+      ) : slug !== "ceges-csapatepito" ? (
         <Booking />
-      )}
+      ) : null}
     </>
   );
 }

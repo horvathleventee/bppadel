@@ -77,3 +77,7 @@ See `docs/QA.md` and `docs/AUDIT.md`. Build, TypeScript, lint, route/link/asset/
 Booking buttons now open a choice of phone, Playtomic or email. Pricing replaces the former fame section (16.000 Ft / court / hour; 1.500 Ft / racket / visit). Parking is free; digital scoring is no longer advertised. The gallery uses six existing venue photos; additional B-court photos are pending from the client.
 
 The current house rules are supplied by the client and preserved verbatim in `docs/hazirend-client.txt` and `content/hazirend.json`. Asset regeneration intentionally leaves these rules untouched. Earlier audit notes about the original house rules and digital scoring are superseded by this update.
+
+## Vercel and SEO migration
+
+Set the Vercel project Root Directory to `site`. Production environment: `NEXT_PUBLIC_SITE_URL=https://budapestpadel.hu`, `NEXT_PUBLIC_NOINDEX=false`. The tracked `vercel.json` supplies explicit legacy 301 redirects. Preview builds remain noindex automatically. See [SEO audit and migration checklist](docs/SEO-MIGRATION.md) for the verified legacy URL inventory, deployment settings, limitations and post-launch HTTP checks. Run `npm run test:seo` against a production build; `npm run test:seo:live -- https://budapestpadel.hu` only after Vercel is serving that domain.

@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-14T20:35:56.543Z",
+  "source": "WordPress sitemap, homepage navigation and public pages API",
+  "urls": [
+    {
+      "path": "/",
+      "status": 200,
+      "location": null,
+      "newPath": "/",
+      "action": "keep"
+    },
+    {
+      "path": "/rolunk/",
+      "status": 200,
+      "location": null,
+      "newPath": "/rolunk/",
+      "action": "keep"
+    },
+    {
+      "path": "/dicsosegfal/",
+      "status": 200,
+      "location": null,
+      "newPath": "/galeria/",
+      "action": "301"
+    },
+    {
+      "path": "/hazirend/",
+      "status": 200,
+      "location": null,
+      "newPath": "/hazirend/",
+      "action": "keep"
+    },
+    {
+      "path": "/impresszum/",
+      "status": 200,
+      "location": null,
+      "newPath": "/impresszum/",
+      "action": "keep"
+    },
+    {
+      "path": "/adatkezelesi-tajekoztato/",
+      "status": 200,
+      "location": null,
+      "newPath": "/adatkezelesi-tajekoztato/",
+      "action": "keep"
+    }
+  ]
+}

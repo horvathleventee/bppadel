@@ -1,0 +1,87 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": "nextjs",
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/dicsosegfal",
+      "destination": "/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/dicsosegfal/",
+      "destination": "/galeria/",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-sitemap.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-sitemap-posts-page-1.xml",
+      "destination": "/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-1.jpg",
+      "destination": "/images/venue-1-1920.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-2.jpg",
+      "destination": "/images/venue-2-1920.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-3.jpg",
+      "destination": "/images/venue-3-1920.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-4.jpg",
+      "destination": "/images/venue-4-1920.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-5.jpg",
+      "destination": "/images/venue-5-1920.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-6.jpg",
+      "destination": "/images/venue-6-1920.webp",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.budapestpadel.hu"
+        }
+      ],
+      "destination": "https://budapestpadel.hu/:path*",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": ".*\\.vercel\\.app"
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    }
+  ]
+}

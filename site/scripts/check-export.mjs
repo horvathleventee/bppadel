@@ -9,6 +9,7 @@ const routes = [
   "ghost-padel",
   "araink",
   "galeria",
+  "ceges-csapatepito",
   "kapcsolat",
   "mi-az-a-padel",
   "impresszum",

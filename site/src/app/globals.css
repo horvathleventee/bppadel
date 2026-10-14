@@ -1988,3 +1988,18 @@ body:has(.booking-dialog[open]) { overflow: hidden !important; }
   .booking-options a { padding: 14px 12px; gap: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { .venue-gallery img { transition: none; } }
+.team-photo { position: relative; min-height: 440px; }
+.team-intro p, .team-offer p { margin-top: 22px; line-height: 1.8; }
+.team-services { background: #e6eadc; }
+.team-services ul { list-style: none; padding: 0; margin: 0; }
+.team-services li { display: flex; gap: 20px; padding: 20px 0; border-bottom: 1px solid #14231d25; }
+.team-services li span { font-size: 11px; padding-top: 4px; color: #647068; }
+.team-hero h1 { font-size: clamp(36px, 5.6vw, 80px); max-width: 1050px; }
+.team-intro h2, .team-services h2, .team-offer h2 { font-size: clamp(30px, 3.7vw, 54px); }
+.team-contact { background: #ccff5f; padding: clamp(24px,4vw,48px); display: flex; flex-direction: column; align-items: flex-start; gap: 20px; }
+.team-contact h3 { font-size: 28px; line-height: 1.2; }
+.team-contact p { margin: 0; }
+.team-contact a { overflow-wrap: anywhere; max-width: 100%; }
+.team-contact .button { white-space: normal; background: #142b22; color: #fff; }
+@media (max-width: 1180px) { .desktop-nav { display: none; } .header-book { margin-left: auto; } .menu-toggle { display: block; } }
+@media (max-width: 760px) { .team-photo { min-height: 300px; } }
