@@ -127,7 +127,7 @@ export function About({ full = false }: { full?: boolean }) {
           <h2>
             TÖBB, MINT
             <br />
-            EGY <span className="serif-word">pálya.</span>
+            EGY <span className="title-accent">pálya.</span>
           </h2>
           <p className="lead">
             Az első labdamenettől a meccs utáni beszélgetésig.
@@ -286,7 +286,7 @@ export function Beginner() {
           <h2>
             MÉG NEM
             <br />
-            <span className="serif-word">próbáltad?</span>
+            <span className="title-accent">próbáltad?</span>
           </h2>
           <p>
             Két páros, egy pálya és rengeteg közös labdamenet. Ismerd meg a
@@ -308,7 +308,7 @@ export function Fame({ full = false }: { full?: boolean }) {
           <h2>
             A PÁLYÁN MINDENKI
             <br />
-            <span className="serif-word">bizonyíthat.</span>
+            <span className="title-accent">bizonyíthat.</span>
           </h2>
           <p>A közös meccsekből emlékezetes pillanatok születnek.</p>
           {!full && (
@@ -340,7 +340,7 @@ export function Community() {
             <h2>
               A MECCS VÉGET ÉR.
               <br />
-              AZ ÉLMÉNY <span className="serif-word">marad.</span>
+              AZ ÉLMÉNY <span className="title-accent">marad.</span>
             </h2>
           </div>
           <TextLink href={club.instagram}>@budapest.padel</TextLink>
@@ -385,7 +385,7 @@ export function Booking() {
             KÉSZEN ÁLLSZ
             <br />A KÖVETKEZŐ
             <br />
-            <span className="serif-word">meccsre?</span>
+            <span className="title-accent">meccsre?</span>
           </h2>
           <div>
             <span className="booking-arrow" aria-hidden="true">
@@ -411,7 +411,7 @@ export function Contact() {
           <h2>
             ITT
             <br />
-            <span className="serif-word">találkozunk.</span>
+            <span className="title-accent">találkozunk.</span>
           </h2>
           <div className="contact-list">
             <a href={club.directions}>

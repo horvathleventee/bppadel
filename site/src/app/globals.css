@@ -89,10 +89,10 @@ h3 {
   letter-spacing: -0.025em;
   line-height: 1.3;
 }
-.serif-word {
-  font-family: Georgia, "Times New Roman", serif;
+.title-accent {
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: -0.065em;
 }
 .eyebrow {
@@ -345,10 +345,10 @@ h3 {
 }
 .hero h1 span {
   color: var(--lime);
-  font-family: Georgia, serif;
-  font-style: italic;
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
+  font-style: normal;
   font-weight: 400;
-  font-size: 1.13em;
+  font-size: 1em;
 }
 .hero-bottom {
   display: flex;
@@ -610,8 +610,8 @@ h3 {
 }
 .ghost h2 > span {
   color: var(--lime);
-  font-family: Georgia, serif;
-  font-style: italic;
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
+  font-style: normal;
   font-weight: 400;
 }
 .ghost-subtitle {
@@ -776,7 +776,7 @@ h3 {
 .fame-laurel {
   display: block;
   font-size: 55px;
-  font-family: Georgia, serif;
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
   margin-bottom: 25px;
 }
 .fame-empty > span:not(.fame-laurel) {
@@ -1061,8 +1061,8 @@ h3 {
 .guide-step > span {
   font-size: 30px;
   color: #6b7b5d;
-  font-family: Georgia, serif;
-  font-style: italic;
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
+  font-style: normal;
 }
 .guide-step h2 {
   font-size: 28px;
@@ -1722,10 +1722,10 @@ h2,
 .court-image-bottom > span {
   font-family: "Space Grotesk Variable", Arial, sans-serif;
 }
-.serif-word,
+.title-accent,
 .hero h1 span,
 .ghost h2 > span {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Space Grotesk Variable", Arial, sans-serif;
 }
 /* Scroll-linked forehand: independent athlete, contact ring, flight trail and ball. */
 .shot-scene {
@@ -1907,5 +1907,45 @@ h2,
   }
   .shot-player {
     inset: 0;
+  }
+}
+
+/* Unified athletic headline treatment: one family, upright forms, quieter accents. */
+.title-accent {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: inherit;
+}
+.hero h1 span,
+.ghost h2 > span {
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: normal;
+  letter-spacing: inherit;
+}
+h1,
+h2 {
+  letter-spacing: -0.045em;
+}
+.contact h2 {
+  font-size: clamp(38px, 4.4vw, 65px);
+}
+@media (max-width: 650px) {
+  .contact h2 {
+    font-size: clamp(32px, 9.4vw, 46px);
+  }
+  .fame h2 {
+    font-size: clamp(32px, 9.6vw, 42px);
+  }
+  .community .section-heading h2 {
+    font-size: clamp(30px, 8.8vw, 37px);
+  }
+  .about-copy h2 {
+    font-size: clamp(40px, 12vw, 52px);
+  }
+  .beginner h2 {
+    font-size: clamp(36px, 11vw, 50px);
   }
 }

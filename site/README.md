@@ -27,7 +27,7 @@ The `out/` directory is the complete static website. `npm run assets` regenerate
 ## Design and architecture
 
 - Original gray Budapest Padel logo, unchanged. Ivory header keeps its original color readable.
-- Dark forest green, lime accents, real court photography; Space Grotesk and Manrope locally hosted with Hungarian character support. Serif italic accents add an editorial contrast.
+- Dark forest green, lime accents, real court photography; Space Grotesk and Manrope locally hosted with Hungarian character support. Headlines use one consistent upright Space Grotesk treatment; hierarchy comes from size, line breaks and restrained color.
 - Reusable server-rendered sections; the mobile navigation and scroll-linked athlete are small client components. Native modal dialog supplies focus containment and Escape support. CSS motion respects reduced-motion preferences.
 - Custom CSS instead of a utility framework keeps the visual system explicit. No animation library needed for the transitions or the scroll-linked shot.
 - Next Image with a custom local responsive-image loader. Build-time WebP optimization makes image optimization work on simple static hosting without a server or external image provider.
@@ -69,4 +69,5 @@ Set `NEXT_PUBLIC_SITE_URL` at build time to the destination origin. For private/
 ## Verification
 
 See `docs/QA.md` and `docs/AUDIT.md`. Build, TypeScript, lint, route/link/asset/legal/logo checks are included. Core Web Vitals are field metrics and cannot be certified from a local preview. No claimed Lighthouse score or WCAG certification.
+
 
