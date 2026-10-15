@@ -8,6 +8,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "assets": "node scripts/prepare-assets.mjs",
+    "assets:gallery": "node scripts/prepare-gallery.mjs",
     "test": "node scripts/check-export.mjs && node scripts/check-motion.mjs",
     "test:seo": "node scripts/check-seo.mjs",
     "test:seo:live": "node scripts/check-live-seo.mjs"

@@ -309,10 +309,14 @@ export function Pricing() {
   </div></section>;
 }
 export function Gallery() {
-  const captions = ["Ütők a következő meccshez", "A Budapest Padel központ", "Közösségi tér a pályák mellett", "Játék a kék pályán", "Pihenő a meccs után", "Szuperpanorámás pályák"];
+  const captions = ["Ütők a következő meccshez", "A Budapest Padel központ", "Közösségi tér a pályák mellett", "Játék a kék pályán", "Pihenő a meccs után", "Szuperpanorámás pályák"];  const newPhotos = Array.from({ length: 37 }, (_, index) => ({
+    file: `gallery-${String(index + 1).padStart(2, "0")}.webp`,
+    label: `Budapest Padel galériafotó ${String(index + 1).padStart(2, "0")}`,
+  }));
   return <section className="section"><div className="container">
     <SectionHeading label="Galéria" title="NÉZZ KÖRÜL NÁLUNK." description="Pályák, közös terek és a játék hangulata. Ez a Budapest Padel." />
-    <div className="venue-gallery">{captions.map((caption,i)=><figure key={caption}><a href={`/images/venue-${i+1}-1920.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${caption} – nagy kép megnyitása`}><Photo id={`venue-${i+1}`} alt={caption} /></a><figcaption>0{i+1} / {caption}</figcaption></figure>)}</div>
+    <div className="venue-gallery">{captions.map((caption,i)=><figure key={caption}><a href={`/images/venue-${i+1}-1920.webp`} target="_blank" rel="noopener noreferrer" aria-label={`${caption} – nagy kép megnyitása`}><Photo id={`venue-${i+1}`} alt={caption} /></a><figcaption>0{i+1} / {caption}</figcaption></figure>)}</div>    <div className="gallery-divider"><span>ÚJ KÉPEK A BUDAPEST PADELBŐL</span></div>
+    <div className="venue-gallery venue-gallery-new">{newPhotos.map((photo,index)=><figure key={photo.file}><a href={`/images/gallery/${photo.file}`} target="_blank" rel="noopener noreferrer" aria-label={`${photo.label} – nagy kép megnyitása`}><img src={`/images/gallery/${photo.file}`} alt={photo.label} loading="lazy" /></a><figcaption>{String(index + 7).padStart(2, "0")} / BUDAPEST PADEL</figcaption></figure>)}</div>
   </div></section>;
 }
 export function Community() {

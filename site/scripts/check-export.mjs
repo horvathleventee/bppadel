@@ -92,3 +92,12 @@ const prices = load(await readFile("out/araink/index.html", "utf8"));
 assert.ok(prices("main").text().includes("16.000"));
 assert.ok(prices("main").text().includes("1.500"));
 console.log("PASS: client-supplied house rules rendered exactly; prices and updated facilities.");
+
+const gallery = load(await readFile("out/galeria/index.html", "utf8"));
+assert.equal(gallery(".venue-gallery-new figure").length, 37, "gallery should contain all new photos");
+for (const image of gallery(".venue-gallery-new img").toArray()) {
+  const source = gallery(image).attr("src");
+  assert.ok(source, "gallery image should have a source");
+  assert.ok((await stat(`out${source}`)).isFile(), `gallery asset is missing: ${source}`);
+}
+console.log("PASS: optimized gallery photo checks");
