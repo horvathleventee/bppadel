@@ -54,17 +54,6 @@
       "source": "/wp-content/uploads/2024/07/budapest-padel-gallery-6.jpg",
       "destination": "/images/venue-6-1920.webp",
       "statusCode": 301
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.budapestpadel.hu"
-        }
-      ],
-      "destination": "https://budapestpadel.hu/:path*",
-      "statusCode": 301
     }
   ],
   "headers": [
